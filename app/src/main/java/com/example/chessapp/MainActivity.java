@@ -29,13 +29,14 @@ public class MainActivity extends AppCompatActivity {
     protected void createTable (int row, int col)
     {
         TableLayout Table = findViewById(R.id.gameTable);
+        Table.setShrinkAllColumns(true);
         for (int i=0; i<row; i++) {
             TableRow tr = new TableRow(this);
 
             for (int j = 0; j < col; j++) {
                 Button btn = new Button(this);
-                btn.setHeight(Table.getHeight()/64);
-                btn.setWidth(Table.getWidth()/64);
+               // btn.setHeight(Table.getHeight()/64);
+               // btn.setWidth(Table.getWidth()/64);
                 btn.setText("asd");
                 tr.addView(btn);
             }
