@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.ViewGroup;
 import android.widget.TableRow;
 import android.app.ActionBar;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
             for (int j = 0; j < col; j++) {
                 Button btn = new Button(this);
+                btn.setHeight(Table.getHeight()/64);
+                btn.setWidth(Table.getWidth()/64);
                 btn.setText("asd");
                 tr.addView(btn);
             }
